@@ -62,19 +62,19 @@ public class AutomationTesting {
 		System.out.println("Iphone page title validation passed");
 		
 //		Validating different storage varients
-		Boolean var1 = driver.findElements(By.xpath("//*[@id='swatch-0-storage']")).size() > 0;
-		Boolean var2 = driver.findElements(By.xpath("//*[@id='swatch-1-storage']")).size() > 0;
+		Boolean var1 = driver.findElements(By.xpath("//*[@id='swatch-0-storage']")).size() == 1;
+		Boolean var2 = driver.findElements(By.xpath("//*[@id='swatch-1-storage']")).size() == 1;
 		Assert.assertTrue(var1);
 		Assert.assertTrue(var2);
 		System.out.println("64GB and 128GB varients validation passed");
 		
 //		Validating different colors
-		Boolean col1 = driver.findElements(By.id("swatch-0-color")).size() > 0;
-		Boolean col2 = driver.findElements(By.id("swatch-1-color")).size() > 0;
-		Boolean col3 = driver.findElements(By.id("swatch-2-color")).size() > 0;
-		Boolean col4 = driver.findElements(By.id("swatch-3-color")).size() > 0;
-		Boolean col5 = driver.findElements(By.id("swatch-4-color")).size() > 0;
-		Boolean col6 = driver.findElements(By.id("swatch-5-color")).size() > 0;
+		Boolean col1 = driver.findElements(By.id("swatch-0-color")).size() == 1;
+		Boolean col2 = driver.findElements(By.id("swatch-1-color")).size() == 1;
+		Boolean col3 = driver.findElements(By.id("swatch-2-color")).size() == 1;
+		Boolean col4 = driver.findElements(By.id("swatch-3-color")).size() == 1;
+		Boolean col5 = driver.findElements(By.id("swatch-4-color")).size() == 1;
+		Boolean col6 = driver.findElements(By.id("swatch-5-color")).size() == 1;
 		Assert.assertTrue(col1);
 		Assert.assertTrue(col2);
 		Assert.assertTrue(col3);
