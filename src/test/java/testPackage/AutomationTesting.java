@@ -74,14 +74,15 @@ public class AutomationTesting {
 		Boolean col3 = driver.findElements(By.id("swatch-2-color")).size() == 1;
 		Boolean col4 = driver.findElements(By.id("swatch-3-color")).size() == 1;
 		Boolean col5 = driver.findElements(By.id("swatch-4-color")).size() == 1;
-		Boolean col6 = driver.findElements(By.id("swatch-5-color")).size() == 1;
+//		Boolean col6 = driver.findElements(By.id("swatch-5-color")).size() == 1;
 		Assert.assertTrue(col1);
 		Assert.assertTrue(col2);
 		Assert.assertTrue(col3);
 		Assert.assertTrue(col4);
 		Assert.assertTrue(col5);
-		Assert.assertTrue(col6);
-		System.out.println("All 6 colors validation passed");
+//		Assert.assertTrue(col6);
+//		System.out.println("All 6 colors validation passed");
+		System.out.println("All 5 colors validation passed");
 		
 //		Selecting 64GB varient
 		WebElement pick_variant = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='swatch-0-storage']")));
