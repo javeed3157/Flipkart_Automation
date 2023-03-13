@@ -23,7 +23,7 @@ public class AutomationTesting {
 		driver.manage().window().maximize();
 		
 //		Login Using Phone number
-		WebElement login = driver.findElement(By.className("VJZDxU"));
+		WebElement login = driver.findElement(By.cssSelector("._2IX_2-.VJZDxU"));
 		login.sendKeys("9876543210");
 		
 //		Requesting the OTP
